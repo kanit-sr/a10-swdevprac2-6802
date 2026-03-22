@@ -11,6 +11,7 @@ const config = {
   setupFilesAfterEnv: ['<rootDir>/jest.setup.js'],
   testEnvironment: 'jest-environment-jsdom',
   preset: 'ts-jest',
+  testPathIgnorePatterns: ['<rootDir>/__tests__/testutils/'],
   verbose: true,
   testTimeout: 30000,
   globals: {
