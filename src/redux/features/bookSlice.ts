@@ -39,7 +39,12 @@ export const bookSlice = createSlice({
       const bookingToRemove = action.payload;
       state.bookItems = state.bookItems.filter(
         (item) =>
-          !(item.venue === bookingToRemove.venue && item.bookDate === bookingToRemove.bookDate)
+          !(
+            item.nameLastname === bookingToRemove.nameLastname &&
+            item.tel === bookingToRemove.tel &&
+            item.venue === bookingToRemove.venue &&
+            item.bookDate === bookingToRemove.bookDate
+          )
       );
     },
   },

@@ -27,6 +27,9 @@ export default async function TopMenu() {
           <div className="flex items-center">
             <TopMenuItem title="Booking" pageRef="/booking" />
           </div>
+          <div className="flex items-center">
+            <TopMenuItem title="My Booking" pageRef="/mybooking" />
+          </div>
 
           <div className="flex items-center gap-2 pl-8 border-l border-[#d3dad9]/20">
             <div className="rounded-full overflow-hidden ring-2 ring-[#d3dad9]/20 shadow-sm hover:ring-[#d3dad9]/50 transition-all duration-200">
